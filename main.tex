@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{SalimTest}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Salaues}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Dev Ops Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{San Francisco, CA}\\
+	\icon{At}{12}{\href{mailto:salimsalaues@gmail.com}{salimsalaues@gmail.com}}\\	
+
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	% \icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+	\icon{Github}{12}{\href{https://github.com/ssalaues}{github.com/ssalaues}}\\
+	\icon{Phone}{12}{+1 661 713 8213}\\
+	% \icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Who Am I?}
+
+	A self-motivated, creative, and curious individual who likes to keep up with the latest
+	tech. Making complex architecture easily accessible is a passion. Great at context switching
+	to quickly deal with and resolve issues as they arise. The primary open source maintainer
+	for several Kubernetes packages known as Helm Charts.\\
+\end{minipage}
+\hfill  % Whitespace between
+\begin{minipage}[t]{0.45\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Proficiencies}
+	\begin{barchart}{5.5}
+		\baritem{GoLang}{70}
+		\baritem{Bash}{90}
+		\baritem{YAML}{90}
+		\baritem{Ansible}{75}
+		\baritem{Git}{80}
+		\baritem{Python}{60}
+	\end{barchart}
+\end{minipage}
+
+% \begin{center}
+% 	\bubbles{6/Linux, 5/git, 4/Office, 3/Inkscape, 3/Blender}
+% \end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2017 -- Present}
+		{\Large Dev Ops Engineer}
+		{\large Scality}
+		{\small Lead maintainer for distributed data storage (decoupled microservice-based) infrastructure
+		deployed via templated Kubernetes manifests (Helm) with Ansible for Kubernetes deployment (Kubespray).
+		Setup CI/CD pipeline and infrastructure to test all microservices in an end to end environment. Regularly
+		researching and implementing POC solutions for incoming problems. Responsible for CI tooling in Python,
+		feature development in GoLang, and legacy code in NodeJS.\\
+		\texttt{Kubernetes}\slashsep\texttt{GoLang}\slashsep\texttt{Ansible}\slashsep\texttt{AWS}\slashsep\texttt{Python}\slashsep\texttt{NodeJS}}
+	\entry
+		{2016 -- 2017}
+		{\Large Site Reliability Engineer}
+		{\large Ecole 42}
+		{\small First attended the school as a student but quickly was brought on to handle the day to day Dev Ops. Management of thousands of iMac desktops alongside dozens
+		of Linux-based servers in a mixed ecosystem using Ansible for state. Worked around the clock with a team to ensure that all user facing and underlying systems were fully operational to meet the demands of
+		a rapidly growing school. \\
+		\texttt{Python}\slashsep\texttt{Ansible}\slashsep\texttt{Linux}}
+	\entry
+		{2016 -- 2017}
+		{\Large Systems Engineer}
+		{\large Aero Kinetics}
+		{\small Ground up systems and infrastructure deployment for a commercial drone (UAV) startup integrating the server side services with client side web apps.\\\texttt{Java}\slashsep\texttt{Windows Server}}
+	\entry
+		{2013 -- 2016}
+		{\Large Systems Administrator}
+		{\large F1 Information Technologies}
+		{\small Remote admin to over 150 domestic and international clients. Managing ADs, on-premise/cloud Exchange, supporting local/remote users, and traveling abroad or on-site whenever necessary.}
+	\entry
+		{2010 -- 2012}
+		{\Large Network Administrator}
+		{\large R \& D Networks}
+		{\small Network management and deployment for a multi-office enterprise}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2016 -- 2017}
+		{Ecole 42}
+		{A French engineering school specializing in Computer Science.}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Languages}
+	
+	\textbf{English} - native\\
+	\textbf{Spanish} - proficient\\
+	\textbf{French} - intermediate
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Hobbies}
+	
+	\footnotesize A cosplay nerd who makes his own costumes and enjoys going
+	to comic book conventions. Also a car guy that enjoys track days.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Non profit}
+
+	\footnotesize Mentor for kids teaching Arduino workshops and helping them understand
+	basics in a fun and engaging manner.
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
