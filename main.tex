@@ -35,7 +35,7 @@
 	
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{SalimTest}}}}} % First name
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Salim}}}}} % First name
 	
 	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Salaues}}}}} % Last name
 	
@@ -49,7 +49,7 @@
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
 	\icon{MapMarker}{12}{San Francisco, CA}\\
-	\icon{At}{12}{\href{mailto:salimsalaues@gmail.com}{salimsalaues@gmail.com}}\\	
+	\icon{At}{12}{\href{mailto:salimsalaues@gmail.com}{salimsalaues@gmail.com}}\\
 
 \end{minipage}
 \begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
@@ -73,22 +73,20 @@
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Who Am I?}
 
-	A self-motivated, creative, and curious individual who likes to keep up with the latest
-	tech. Making complex architecture easily accessible is a passion. Great at context switching
-	to quickly deal with and resolve issues as they arise. The primary open source maintainer
-	for several Kubernetes packages known as Helm Charts.\\
+	I'm a self-motivated, creative, and curious individual who likes to keep up with the latest
+	tech. With my love for knowledge sharing, I keep in mind that as an engineer I don't live in a vaccuum
+	so it's important to try to make complex systems easily accessible and understandable to others. \\
 \end{minipage}
 \hfill  % Whitespace between
 \begin{minipage}[t]{0.45\textwidth} % 50% of the page for the skills bar chart
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Proficiencies}
 	\begin{barchart}{5.5}
-		\baritem{GoLang}{70}
+		\baritem{Python}{70}
 		\baritem{Bash}{90}
+		\baritem{Terraform}{80}
 		\baritem{YAML}{90}
-		\baritem{Ansible}{75}
 		\baritem{Git}{80}
-		\baritem{Python}{60}
 	\end{barchart}
 \end{minipage}
 
@@ -104,10 +102,21 @@
 
 \begin{entrylist}
 	\entry
-		{2017 -- Present}
+		{2019 -- Present}
+		{\Large Lead Dev Ops Engineer}
+		{\large OpenInvest}
+		{\small Initially solving startup scaling problems through migrations to more robust infrastructure in \mbox{Kubernetes} and industry best practices. Built out
+		internal tooling to not only optimize developer workflows but also work with operations to automate complex proceedures. Implented full stack monitoring, 
+		tracing, and alerting alongside dashboards to give developers more clear visibily across the stack for ease of debugging. Eventually lead post-acquisition
+		infrastructure migrations to J.P. Morgan Chase internal tooling. Current ongoing duties include managing evolving infrastructure requirements, maintaining
+		security compliance and either delgation of work or pairing to knowledge share with more junior DevOps engineers. Constantly context switching to deliver
+		daily unique challenges that may arise. \\
+		\texttt{Kubernetes}\slashsep\texttt{Python}\slashsep\texttt{Terraform}\slashsep\texttt{AWS}\slashsep\texttt{NodeJS}}
+	\entry
+		{2017 -- 2019}
 		{\Large Dev Ops Engineer}
 		{\large Scality}
-		{\small Lead maintainer for distributed data storage (decoupled microservice-based) infrastructure
+		{\small Lead maintainer for multi-cloud object storage (decoupled microservice-based) infrastructure
 		deployed via templated Kubernetes manifests (Helm) with Ansible for Kubernetes deployment (Kubespray).
 		Setup CI/CD pipeline and infrastructure to test all microservices in an end to end environment. Regularly
 		researching and implementing POC solutions for incoming problems. Responsible for CI tooling in Python,
@@ -117,25 +126,20 @@
 		{2016 -- 2017}
 		{\Large Site Reliability Engineer}
 		{\large Ecole 42}
-		{\small First attended the school as a student but quickly was brought on to handle the day to day Dev Ops. Management of thousands of iMac desktops alongside dozens
-		of Linux-based servers in a mixed ecosystem using Ansible for state. Worked around the clock with a team to ensure that all user facing and underlying systems were fully operational to meet the demands of
-		a rapidly growing school. \\
+		{\small Management of thousands of iMac desktops alongside dozens of Linux-based servers in a mixed ecosystem using Ansible for state. Worked around
+		the clock with a team to ensure that all user facing and underlying systems were fully operational to meet the demands of a rapidly growing school. \\
 		\texttt{Python}\slashsep\texttt{Ansible}\slashsep\texttt{Linux}}
 	\entry
 		{2016 -- 2017}
 		{\Large Systems Engineer}
 		{\large Aero Kinetics}
-		{\small Ground up systems and infrastructure deployment for a commercial drone (UAV) startup integrating the server side services with client side web apps.\\\texttt{Java}\slashsep\texttt{Windows Server}}
+		{\small Infrastructure design and deployment for a commercial drone startup integrating the server side services with client side web apps.\\\texttt{Java}\slashsep\texttt{Windows Server}}
 	\entry
 		{2013 -- 2016}
 		{\Large Systems Administrator}
 		{\large F1 Information Technologies}
-		{\small Remote admin to over 150 domestic and international clients. Managing ADs, on-premise/cloud Exchange, supporting local/remote users, and traveling abroad or on-site whenever necessary.}
-	\entry
-		{2010 -- 2012}
-		{\Large Network Administrator}
-		{\large R \& D Networks}
-		{\small Network management and deployment for a multi-office enterprise}
+		{\small Remote admin managing ADs, on-premise/cloud Exchange, and supporting local/remote users across domestic and international clients.}
+
 
 \end{entrylist}
 
@@ -143,21 +147,21 @@
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
-\cvsect{Education}
+% \cvsect{Education}
 
-\begin{entrylist}
-	\entry
-		{2016 -- 2017}
-		{Ecole 42}
-		{A French engineering school specializing in Computer Science.}
+% \begin{entrylist}
+% 	\entry
+% 		{2016 -- 2017}
+% 		{Ecole 42}
+% 		{A French engineering school specializing in Computer Science.}
 
-\end{entrylist}
+% \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.25\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Languages}
 	
@@ -166,15 +170,14 @@
 	\textbf{French} - intermediate
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.25\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Hobbies}
 	
-	\footnotesize A cosplay nerd who makes his own costumes and enjoys going
-	to comic book conventions. Also a car guy that enjoys track days.
+	\footnotesize A passion for photography, comic books conventions, and the \mbox{occasional} cars \& coffee.
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.25\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Non profit}
 
