@@ -2,8 +2,8 @@ name: compile-pdf
 run-name: ${{ github.actor }}
 on: [push]
 jobs:
-  compile:
-    runs-on: beevelop/latex:latest
+  compile: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: sudo apt install -y texlive-latex-base
       - run: pdflatex main.tex
