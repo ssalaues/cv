@@ -1,0 +1,9 @@
+name: compile-pdf
+run-name: ${{ github.actor }}
+on: [push]
+jobs:
+  compile:
+    runs-on: beevelop/latex:latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pdflatex main.tex
